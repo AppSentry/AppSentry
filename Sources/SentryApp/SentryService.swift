@@ -2,6 +2,8 @@ import Sentry
 
 public struct SentryService {
     
+    public init(){}
+    
     public func start(with dsn: String) {
         SentrySDK.start { options in
             options.dsn = dsn
