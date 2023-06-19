@@ -2,7 +2,7 @@ import Sentry
 
 public struct SentryService {
     
-    func start(with dsn: String) {
+    public func start(with dsn: String) {
         SentrySDK.start { options in
             options.dsn = dsn
             options.debug = true // Enabled debug when first installing is always helpful
